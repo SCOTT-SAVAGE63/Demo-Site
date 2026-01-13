@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ubuntu Alliance Party DEMO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://source.unsplash.com/64x64/?south-africa,flag">
+</head>
+<body>
+    <div class="page-transition"></div>
+    
+    <div class="demo-banner">
+        <p><strong>DEMO SITE:</strong> This is a demonstration website for portfolio purposes only. Not affiliated with any real political party.</p>
+    </div>
+    
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="party-logo">
+                    <div class="logo-icon">UA</div>
+                    <div class="logo-text">
+                        <h1>Ubuntu Alliance Party</h1>
+                        <p>DEMO - Building Inclusive Prosperity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="platform.html">Platform & Policies <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#economic">Economic Justice</a>
+                            <a href="platform.html#land">Land & Housing</a>
+                            <a href="platform.html#education">Education Reform</a>
+                            <a href="platform.html#healthcare">Healthcare Access</a>
+                            <a href="platform.html#energy">Energy Security</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="news.html">News & Updates</a></li>
+                    <li class="nav-item"><a href="events.html">Events</a></li>
+                    <li class="nav-item"><a href="get-involved.html">Get Involved</a></li>
+                    <li class="nav-item"><a href="donate.html">Donate</a></li>
+                    <li class="nav-item active"><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-search">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button class="search-submit"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section contact-hero">
+        <div class="hero-background" style="background-image: url('https://source.unsplash.com/1920x1080/?contact,communication,meeting')"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Get In Touch</h1>
+            <p class="hero-subtitle">DEMO: Connect with our team, share your ideas, or ask questions about our movement</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="contact-container">
+            <div class="contact-main">
+                <div class="contact-header">
+                    <h2>How Can We Help You?</h2>
+                    <p>DEMO: Choose the best way to contact us based on your needs</p>
+                </div>
+                
+                <div class="contact-options">
+                    <div class="contact-card" data-contact="general">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>General Inquiries</h3>
+                        <p>Questions about our party, policies, or general information.</p>
+                        <button class="contact-btn" data-modal="generalModal">Contact Now</button>
+                    </div>
+                    
+                    <div class="contact-card" data-contact="media">
+                        <div class="contact-icon"><i class="fas fa-newspaper"></i></div>
+                        <h3>Media & Press</h3>
+                        <p>Press inquiries, interview requests, and media partnerships.</p>
+                        <button class="contact-btn" data-modal="mediaModal">Contact Press</button>
+                    </div>
+                    
+                    <div class="contact-card" data-contact="volunteer">
+                        <div class="contact-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Volunteer Support</h3>
+                        <p>Questions about volunteering or getting involved in campaigns.</p>
+                        <button class="contact-btn" data-modal="volunteerModal">Contact Team</button>
+                    </div>
+                    
+                    <div class="contact-card" data-contact="chapter">
+                        <div class="contact-icon"><i class="fas fa-users"></i></div>
+                        <h3>Chapter Support</h3>
+                        <p>Support for local chapters and community organizers.</p>
+                        <button class="contact-btn" data-modal="chapterModal">Contact Support</button>
+                    </div>
+                    
+                    <div class="contact-card" data-contact="donation">
+                        <div class="contact-icon"><i class="fas fa-donate"></i></div>
+                        <h3>Donation Support</h3>
+                        <p>Questions about donations, receipts, or fundraising.</p>
+                        <button class="contact-btn" data-modal="donationModal">Contact Finance</button>
+                    </div>
+                    
+                    <div class="contact-card" data-contact="policy">
+                        <div class="contact-icon"><i class="fas fa-file-contract"></i></div>
+                        <h3>Policy Feedback</h3>
+                        <p>Share feedback or suggestions about our policies.</p>
+                        <button class="contact-btn" data-modal="policyModal">Share Feedback</button>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h3>Send Us a Message</h3>
+                        <p>DEMO: Fill out this form and we'll get back to you as soon as possible</p>
+                    </div>
+                    
+                    <form class="contact-form" id="mainContactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactProvince">Province</label>
+                                <select id="contactProvince" name="province">
+                                    <option value="">Select Province</option>
+                                    <option value="gauteng">Gauteng</option>
+                                    <option value="western-cape">Western Cape</option>
+                                    <option value="kzn">KwaZulu-Natal</option>
+                                    <option value="eastern-cape">Eastern Cape</option>
+                                    <option value="free-state">Free State</option>
+                                    <option value="limpopo">Limpopo</option>
+                                    <option value="mpumalanga">Mpumalanga</option>
+                                    <option value="north-west">North West</option>
+                                    <option value="northern-cape">Northern Cape</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="donation">Donation Questions</option>
+                                <option value="policy">Policy Feedback</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="event">Event Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                <span>Subscribe to our newsletter for updates and announcements</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span>I agree to the <a href="#">Privacy Policy</a> and understand this is a demonstration site *</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <p class="form-note">DEMO: This is a demonstration form. No actual messages will be sent.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="faq-section">
+                    <h3>Common Questions</h3>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>How quickly will I receive a response?</h4>
+                                <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>DEMO: Our team aims to respond to all inquiries within 48 hours. For urgent matters, please indicate this in your message.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Can I meet with a representative in person?</h4>
+                                <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>DEMO: Yes, we can arrange meetings through our local chapters. Visit our Events page to find upcoming town halls and meetings in your area.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Do you have offices I can visit?</h4>
+                                <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>DEMO: Our main office is in Pretoria, but we operate primarily through our network of local chapters across South Africa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Contact Information</h3>
+                    <div class="contact-info-details">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-content">
+                                <h4>Head Office</h4>
+                                <p>123 Unity Street<br>Pretoria, 0002<br>Gauteng, South Africa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p>DEMO: (012) 345-6789<br>Mon-Fri: 9:00-17:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>demo@ubuntualliance.org.za<br>General Inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-content">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00-17:00<br>Saturday: 10:00-14:00<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Department Contacts</h3>
+                    <div class="department-contacts">
+                        <a href="#" class="dept-contact">
+                            <i class="fas fa-newspaper"></i>
+                            <div class="dept-info">
+                                <span class="dept-name">Media & Press</span>
+                                <span class="dept-email">press@ubuntualliance.org.za</span>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="dept-contact">
+                            <i class="fas fa-hands-helping"></i>
+                            <div class="dept-info">
+                                <span class="dept-name">Volunteer Support</span>
+                                <span class="dept-email">volunteer@ubuntualliance.org.za</span>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="dept-contact">
+                            <i class="fas fa-donate"></i>
+                            <div class="dept-info">
+                                <span class="dept-name">Donations</span>
+                                <span class="dept-email">donations@ubuntualliance.org.za</span>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="dept-contact">
+                            <i class="fas fa-users"></i>
+                            <div class="dept-info">
+                                <span class="dept-name">Chapter Support</span>
+                                <span class="dept-email">chapters@ubuntualliance.org.za</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Emergency Contact</h3>
+                    <div class="emergency-contact">
+                        <div class="emergency-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <p>For urgent political or campaign emergencies only.</p>
+                        <a href="tel:+27123456789" class="emergency-phone">
+                            <i class="fas fa-phone-alt"></i>
+                            DEMO: 012 345 6789 (Emergency)
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Follow Us</h3>
+                    <div class="social-media">
+                        <a href="#" class="social-link large">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link large">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link large">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link large">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="section map-section">
+            <div class="section-header">
+                <h2 class="section-title">Find Us</h2>
+                <p class="section-subtitle">DEMO: Our locations across South Africa</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-visual">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>DEMO: Interactive map showing our offices and chapter locations</p>
+                    </div>
+                </div>
+                
+                <div class="map-locations">
+                    <div class="location-card">
+                        <h4>Pretoria Headquarters</h4>
+                        <p class="location-address">123 Unity Street, Pretoria, 0002</p>
+                        <div class="location-meta">
+                            <span><i class="fas fa-phone"></i> (012) 345-6789</span>
+                            <span><i class="fas fa-clock"></i> Mon-Fri: 9:00-17:00</span>
+                        </div>
+                        <button class="location-directions">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </button>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h4>Johannesburg Office</h4>
+                        <p class="location-address">45 Freedom Road, Braamfontein, 2001</p>
+                        <div class="location-meta">
+                            <span><i class="fas fa-phone"></i> (011) 456-7890</span>
+                            <span><i class="fas fa-clock"></i> Mon-Fri: 8:30-16:30</span>
+                        </div>
+                        <button class="location-directions">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </button>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h4>Cape Town Office</h4>
+                        <p class="location-address">78 Hope Street, City Bowl, 8001</p>
+                        <div class="location-meta">
+                            <span><i class="fas fa-phone"></i> (021) 567-8901</span>
+                            <span><i class="fas fa-clock"></i> Mon-Fri: 9:00-17:00</span>
+                        </div>
+                        <button class="location-directions">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section cta-section contact-cta">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Prefer to Visit in Person?</h2>
+                    <p class="cta-text">DEMO: Join us at one of our upcoming town hall meetings or community events to connect directly with our team and leadership.</p>
+                    <div class="cta-buttons">
+                        <a href="events.html" class="btn-primary btn-large">
+                            <i class="fas fa-calendar-alt"></i> View Events
+                        </a>
+                        <a href="get-involved.html" class="btn-secondary btn-large">
+                            <i class="fas fa-users"></i> Find Local Chapter
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="cta-image">
+                    <div class="image-placeholder" style="background-image: url('https://source.unsplash.com/400x300/?meeting,community,africa')"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">UA</div>
+                        <div class="logo-text">
+                            <h3>Ubuntu Alliance Party</h3>
+                            <p>DEMO - Building Inclusive Prosperity</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">DEMO: This is a demonstration website showcasing a South African political party concept focused on unity, justice, and prosperity for all citizens.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-contact">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> DEMO: 123 Unity Street, Pretoria, 0002</li>
+                        <li><i class="fas fa-phone"></i> DEMO: (012) 345-6789</li>
+                        <li><i class="fas fa-envelope"></i> demo@ubuntualliance.org.za</li>
+                    </ul>
+                    
+                    <div class="newsletter">
+                        <h5 class="newsletter-title">Stay Informed</h5>
+                        <p class="newsletter-text">DEMO: Subscribe for updates on this demonstration project.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-legal">
+                    <h4 class="footer-title">Legal & Demo Info</h4>
+                    <ul class="legal-links">
+                        <li><a href="#">Demo Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                    
+                    <div class="footer-disclaimer">
+                        <p><strong>DEMONSTRATION WEBSITE:</strong> This is a portfolio project for demonstration purposes only. Not affiliated with any real political entity. All data is fictional.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Ubuntu Alliance Party DEMO. All rights reserved. This is a demonstration website.</p>
+                <div class="footer-badges">
+                    <span class="badge">Portfolio Project</span>
+                    <span class="badge">Demonstration Only</span>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Contact Modals -->
+    <div class="modal" id="generalModal">
+        <div class="modal-content contact-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">General Inquiry</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>For general questions about our party, policies, or activities.</p>
+                <div class="contact-details">
+                    <div class="detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <span>info@ubuntualliance.org.za</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone:</strong>
+                            <span>(012) 345-6789 (General Line)</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours:</strong>
+                            <span>Monday-Friday, 9:00-17:00</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-primary copy-email" data-email="info@ubuntualliance.org.za">
+                    <i class="fas fa-copy"></i> Copy Email Address
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="mediaModal">
+        <div class="modal-content contact-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Media & Press</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>For press inquiries, interview requests, or media partnerships.</p>
+                <div class="contact-details">
+                    <div class="detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Press Email:</strong>
+                            <span>press@ubuntualliance.org.za</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Press Line:</strong>
+                            <span>(012) 345-6790</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Press Officer:</strong>
+                            <span>Lerato Ndlovu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="press-resources">
+                    <h4>Press Resources</h4>
+                    <div class="resource-links">
+                        <a href="#"><i class="fas fa-download"></i> Media Kit</a>
+                        <a href="#"><i class="fas fa-images"></i> Photo Gallery</a>
+                        <a href="#"><i class="fas fa-file-alt"></i> Press Releases</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="volunteerModal">
+        <div class="modal-content contact-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Volunteer Support</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Questions about volunteering, campaigns, or getting involved.</p>
+                <div class="contact-details">
+                    <div class="detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Volunteer Email:</strong>
+                            <span>volunteer@ubuntualliance.org.za</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Volunteer Line:</strong>
+                            <span>(012) 345-6791</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <strong>Volunteer Coordinator:</strong>
+                            <span>Siyabonga Mbatha</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <a href="get-involved.html" class="btn-primary">
+                        <i class="fas fa-hands-helping"></i> View Volunteer Opportunities
+                    </a>
+                    <button class="btn-secondary copy-email" data-email="volunteer@ubuntualliance.org.za">
+                        <i class="fas fa-copy"></i> Copy Email
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="contactSuccessModal">
+        <div class="modal-content success-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Message Sent!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="success-message">
+                    <h4>DEMO: Thank You for Contacting Us</h4>
+                    <p>Your message has been received. Our team will review it and respond as soon as possible.</p>
+                    <div class="success-details">
+                        <p><strong>Reference Number:</strong> UA-CONTACT-2023-001</p>
+                        <p><strong>Expected Response:</strong> Within 48 hours</p>
+                    </div>
+                </div>
+                <div class="success-actions">
+                    <button class="btn-primary close-modal">
+                        Continue to Website
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

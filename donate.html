@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Ubuntu Alliance Party DEMO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://source.unsplash.com/64x64/?south-africa,flag">
+</head>
+<body>
+    <div class="page-transition"></div>
+    
+
+    
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="party-logo">
+                    <div class="logo-icon">UA</div>
+                    <div class="logo-text">
+                        <h1>Ubuntu Alliance Party</h1>
+                        <p>DEMO - Building Inclusive Prosperity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="platform.html">Platform & Policies <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#economic">Economic Justice</a>
+                            <a href="platform.html#land">Land & Housing</a>
+                            <a href="platform.html#education">Education Reform</a>
+                            <a href="platform.html#healthcare">Healthcare Access</a>
+                            <a href="platform.html#energy">Energy Security</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="news.html">News & Updates</a></li>
+                    <li class="nav-item"><a href="events.html">Events</a></li>
+                    <li class="nav-item"><a href="get-involved.html">Get Involved</a></li>
+                    <li class="nav-item active highlight"><a href="donate.html">Donate</a></li>
+                </ul>
+                
+                <div class="nav-search">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button class="search-submit"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section donate-hero">
+        <div class="hero-background" style="background-image: url('https://source.unsplash.com/1920x1080/?support,finance,hands')"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Fund Our Movement</h1>
+            <p class="hero-subtitle">DEMO: Your contribution helps build a better South Africa for all</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="donate-container">
+            <div class="donate-main">
+                <div class="donate-progress">
+                    <div class="progress-header">
+                        <h3>Campaign Fundraising Goal</h3>
+                        <div class="progress-target">R5,000,000 Goal</div>
+                    </div>
+                    
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-progress="74"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span class="progress-current">R3,700,000</span>
+                            <span class="progress-remaining">R1,300,000 to go</span>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-stats">
+                        <div class="stat">
+                            <div class="stat-value">2,458</div>
+                            <div class="stat-label">Donors</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">R1,505</div>
+                            <div class="stat-label">Average Donation</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">42</div>
+                            <div class="stat-label">Days Left</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="donation-options">
+                    <div class="donation-header">
+                        <h2>Make a Donation</h2>
+                        <p>DEMO: Choose your donation amount and method</p>
+                    </div>
+                    
+                    <div class="amount-options">
+                        <div class="amount-tabs">
+                            <button class="amount-tab active" data-frequency="once">One-Time</button>
+                            <button class="amount-tab" data-frequency="monthly">Monthly</button>
+                            <button class="amount-tab" data-frequency="quarterly">Quarterly</button>
+                        </div>
+                        
+                        <div class="amount-presets">
+                            <button class="amount-preset" data-amount="50">R50</button>
+                            <button class="amount-preset" data-amount="100">R100</button>
+                            <button class="amount-preset" data-amount="250">R250</button>
+                            <button class="amount-preset" data-amount="500">R500</button>
+                            <button class="amount-preset" data-amount="1000">R1,000</button>
+                            <button class="amount-preset" data-amount="2500">R2,500</button>
+                        </div>
+                        
+                        <div class="custom-amount">
+                            <div class="custom-amount-input">
+                                <span class="currency">R</span>
+                                <input type="number" id="customAmount" placeholder="Other amount" min="10" step="10">
+                            </div>
+                            <div class="amount-note">Minimum donation: R10</div>
+                        </div>
+                    </div>
+                    
+                    <div class="donation-methods">
+                        <h3>Payment Method</h3>
+                        <div class="method-options">
+                            <div class="method-option active" data-method="card">
+                                <i class="far fa-credit-card"></i>
+                                <span>Credit/Debit Card</span>
+                            </div>
+                            <div class="method-option" data-method="eft">
+                                <i class="fas fa-university"></i>
+                                <span>Bank Transfer (EFT)</span>
+                            </div>
+                            <div class="method-option" data-method="snapscan">
+                                <i class="fas fa-qrcode"></i>
+                                <span>SnapScan</span>
+                            </div>
+                            <div class="method-option" data-method="paypal">
+                                <i class="fab fa-paypal"></i>
+                                <span>PayPal</span>
+                            </div>
+                        </div>
+                        
+                        <div class="method-details" id="cardDetails">
+                            <form class="card-form">
+                                <div class="form-group">
+                                    <label for="cardName">Name on Card *</label>
+                                    <input type="text" id="cardName" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="cardNumber">Card Number *</label>
+                                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardExpiry">Expiry Date *</label>
+                                        <input type="text" id="cardExpiry" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardCVC">CVC *</label>
+                                        <input type="text" id="cardCVC" placeholder="123" required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="method-details hidden" id="eftDetails">
+                            <div class="eft-info">
+                                <h4>Bank Transfer Details</h4>
+                                <div class="bank-details">
+                                    <div class="detail">
+                                        <span class="label">Bank:</span>
+                                        <span class="value">First National Bank</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span class="label">Account Name:</span>
+                                        <span class="value">Ubuntu Alliance Party</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span class="label">Account Number:</span>
+                                        <span class="value">6273 8901 2345</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span class="label">Branch Code:</span>
+                                        <span class="value">250655</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span class="label">Reference:</span>
+                                        <span class="value">Your name + DONATION</span>
+                                    </div>
+                                </div>
+                                <p class="eft-note">Please email proof of payment to donations@ubuntualliance.org.za</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method-details hidden" id="snapscanDetails">
+                            <div class="snapscan-info">
+                                <div class="qr-code">
+                                    <div class="qr-placeholder">
+                                        <i class="fas fa-qrcode"></i>
+                                    </div>
+                                </div>
+                                <div class="snapscan-text">
+                                    <h4>Scan to Donate</h4>
+                                    <p>Use the SnapScan app to scan this QR code and complete your donation.</p>
+                                    <div class="app-badges">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/320px-Download_on_the_App_Store_Badge.svg.png" alt="App Store">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/320px-Google_Play_Store_badge_EN.svg.png" alt="Google Play">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="method-details hidden" id="paypalDetails">
+                            <div class="paypal-info">
+                                <div class="paypal-logo">
+                                    <i class="fab fa-paypal"></i>
+                                </div>
+                                <p>You will be redirected to PayPal to complete your donation securely.</p>
+                                <button class="btn-secondary paypal-redirect">
+                                    <i class="fab fa-paypal"></i> Continue to PayPal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="donor-info">
+                        <h3>Donor Information</h3>
+                        <form class="donor-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorFirstName">First Name *</label>
+                                    <input type="text" id="donorFirstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorLastName">Last Name *</label>
+                                    <input type="text" id="donorLastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorEmail">Email Address *</label>
+                                    <input type="email" id="donorEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorPhone">Phone Number</label>
+                                    <input type="tel" id="donorPhone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorAddress">Street Address</label>
+                                <input type="text" id="donorAddress">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="donorCity">City</label>
+                                    <input type="text" id="donorCity">
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorProvince">Province</label>
+                                    <select id="donorProvince">
+                                        <option value="">Select Province</option>
+                                        <option value="gauteng">Gauteng</option>
+                                        <option value="western-cape">Western Cape</option>
+                                        <option value="kzn">KwaZulu-Natal</option>
+                                        <option value="eastern-cape">Eastern Cape</option>
+                                        <option value="free-state">Free State</option>
+                                        <option value="limpopo">Limpopo</option>
+                                        <option value="mpumalanga">Mpumalanga</option>
+                                        <option value="north-west">North West</option>
+                                        <option value="northern-cape">Northern Cape</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorPostalCode">Postal Code</label>
+                                    <input type="text" id="donorPostalCode">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorEmployer">Employer (if applicable)</label>
+                                <input type="text" id="donorEmployer">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="donorOccupation">Occupation (if applicable)</label>
+                                <input type="text" id="donorOccupation">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="donation-actions">
+                        <div class="terms-agreement">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="termsAgree" required>
+                                <span>I confirm that this donation is made from my personal funds, not corporate funds, and that I am a South African citizen or permanent resident. I have read and agree to the <a href="#">Terms & Conditions</a>.</span>
+                            </label>
+                        </div>
+                        
+                        <div class="donation-summary">
+                            <div class="summary-row">
+                                <span class="summary-label">Donation Amount:</span>
+                                <span class="summary-value" id="summaryAmount">R0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span class="summary-label">Frequency:</span>
+                                <span class="summary-value" id="summaryFrequency">One-Time</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span class="summary-label">Total:</span>
+                                <span class="summary-value" id="summaryTotal">R0.00</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary btn-large donate-submit" id="donateSubmit">
+                            <i class="fas fa-lock"></i> Complete Donation
+                        </button>
+                        
+                        <p class="security-note">
+                            <i class="fas fa-shield-alt"></i> Your donation is secure and encrypted. All information is protected.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="donate-sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Where Your Money Goes</h3>
+                    <div class="funding-breakdown">
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Campaign Materials</div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 35%"></div>
+                            </div>
+                            <div class="breakdown-percent">35%</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Community Outreach</div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 25%"></div>
+                            </div>
+                            <div class="breakdown-percent">25%</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Digital Campaign</div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="breakdown-percent">20%</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Staff & Operations</div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 15%"></div>
+                            </div>
+                            <div class="breakdown-percent">15%</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Legal & Compliance</div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 5%"></div>
+                            </div>
+                            <div class="breakdown-percent">5%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Donation Benefits</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-badge-check"></i>
+                            <div class="benefit-text">
+                                <strong>R50+</strong>
+                                <span>Thank you email</span>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-badge-check"></i>
+                            <div class="benefit-text">
+                                <strong>R250+</strong>
+                                <span>Personal thank you note</span>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-badge-check"></i>
+                            <div class="benefit-text">
+                                <strong>R1,000+</strong>
+                                <span>Exclusive updates</span>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-badge-check"></i>
+                            <div class="benefit-text">
+                                <strong>R5,000+</strong>
+                                <span>Invitation to donor events</span>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-badge-check"></i>
+                            <div class="benefit-text">
+                                <strong>R10,000+</strong>
+                                <span>Personal briefing with leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Legal Requirements</h3>
+                    <div class="legal-info">
+                        <p><strong>DEMO:</strong> This is a demonstration. In South Africa:</p>
+                        <ul class="legal-list">
+                            <li>Only South African citizens/permanent residents may donate</li>
+                            <li>Maximum individual donation: R100,000 per year</li>
+                            <li>Corporate donations are prohibited</li>
+                            <li>Foreign donations are prohibited</li>
+                            <li>All donations are recorded and reported</li>
+                        </ul>
+                        <a href="#" class="legal-link">View Full Legal Requirements →</a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recent Donors</h3>
+                    <div class="recent-donors">
+                        <div class="donor-item">
+                            <div class="donor-avatar">TM</div>
+                            <div class="donor-info">
+                                <div class="donor-name">Thabo M.</div>
+                                <div class="donor-details">Donated R500 • 2 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="donor-item">
+                            <div class="donor-avatar">NK</div>
+                            <div class="donor-info">
+                                <div class="donor-name">Nomsa K.</div>
+                                <div class="donor-details">Donated R1,000 • 5 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="donor-item">
+                            <div class="donor-avatar">SP</div>
+                            <div class="donor-info">
+                                <div class="donor-name">Siyabonga P.</div>
+                                <div class="donor-details">Donated R250 • Yesterday</div>
+                            </div>
+                        </div>
+                        <div class="donor-item">
+                            <div class="donor-avatar">Anonymous</div>
+                            <div class="donor-info">
+                                <div class="donor-name">Anonymous</div>
+                                <div class="donor-details">Donated R2,500 • 2 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Other Ways to Give</h3>
+                    <div class="other-ways">
+                        <a href="#" class="way-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>In-Kind Donations</span>
+                        </a>
+                        <a href="#" class="way-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Corporate Matching</span>
+                        </a>
+                        <a href="#" class="way-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Fundraise for Us</span>
+                        </a>
+                        <a href="#" class="way-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Legacy Giving</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="section impact-section">
+            <div class="section-header">
+                <h2 class="section-title">Your Impact</h2>
+                <p class="section-subtitle">DEMO: See how donations make a difference</p>
+            </div>
+            
+            <div class="impact-cards">
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-bullhorn"></i></div>
+                    <div class="impact-content">
+                        <h3>R500 Funds Community Outreach</h3>
+                        <p>Provides campaign materials for a week of door-to-door canvassing in a township community.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-users"></i></div>
+                    <div class="impact-content">
+                        <h3>R1,000 Supports Town Hall</h3>
+                        <p>Covers venue and equipment costs for a community town hall meeting with 100+ attendees.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-laptop"></i></div>
+                    <div class="impact-content">
+                        <h3>R2,500 Funds Digital Ads</h3>
+                        <p>Runs targeted social media campaigns reaching 50,000+ potential supporters.</p>
+                    </div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="impact-content">
+                        <h3>R5,000 Trains Volunteers</h3>
+                        <p>Provides comprehensive training for 20 community organizers across South Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section transparency-section">
+            <div class="section-header">
+                <h2 class="section-title">Transparency & Accountability</h2>
+                <p class="section-subtitle">DEMO: We're committed to ethical fundraising</p>
+            </div>
+            
+            <div class="transparency-grid">
+                <div class="transparency-card">
+                    <div class="transparency-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Regular Reporting</h3>
+                    <p>Quarterly financial reports published online with detailed breakdown of all income and expenditure.</p>
+                </div>
+                
+                <div class="transparency-card">
+                    <div class="transparency-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Ethical Compliance</h3>
+                    <p>Strict adherence to South African electoral laws and fundraising regulations. All donations vetted.</p>
+                </div>
+                
+                <div class="transparency-card">
+                    <div class="transparency-icon"><i class="fas fa-search"></i></div>
+                    <h3>Public Audits</h3>
+                    <p>Annual independent audits conducted by registered auditors. Full reports available to public.</p>
+                </div>
+                
+                <div class="transparency-card">
+                    <div class="transparency-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Data Protection</h3>
+                    <p>Your personal information is protected under POPIA. We never share donor details without consent.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">UA</div>
+                        <div class="logo-text">
+                            <h3>Ubuntu Alliance Party</h3>
+                            <p>DEMO - Building Inclusive Prosperity</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">DEMO: This is a demonstration website showcasing a South African political party concept focused on unity, justice, and prosperity for all citizens.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-contact">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> DEMO: 123 Unity Street, Pretoria, 0002</li>
+                        <li><i class="fas fa-phone"></i> DEMO: (012) 345-6789</li>
+                        <li><i class="fas fa-envelope"></i> demo@ubuntualliance.org.za</li>
+                    </ul>
+                    
+                    <div class="newsletter">
+                        <h5 class="newsletter-title">Stay Informed</h5>
+                        <p class="newsletter-text">DEMO: Subscribe for updates on this demonstration project.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-legal">
+                    <h4 class="footer-title">Legal & Demo Info</h4>
+                    <ul class="legal-links">
+                        <li><a href="#">Demo Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                    
+                    <div class="footer-disclaimer">
+                        <p><strong>DEMONSTRATION WEBSITE:</strong> This is a portfolio project for demonstration purposes only. Not affiliated with any real political entity. All data is fictional.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Ubuntu Alliance Party DEMO. All rights reserved. This is a demonstration website.</p>
+                <div class="footer-badges">
+                    <span class="badge">Portfolio Project</span>
+                    <span class="badge">Demonstration Only</span>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- Donation Success Modal -->
+    <div class="modal" id="donationSuccessModal">
+        <div class="modal-content success-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Thank You for Your Donation!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="success-message">
+                    <h4>DEMO: Donation Received</h4>
+                    <p>Your demonstration donation of <strong id="successAmount">R0.00</strong> has been processed successfully.</p>
+                    
+                    <div class="donation-receipt">
+                        <div class="receipt-row">
+                            <span>Transaction ID:</span>
+                            <span>UA-DEMO-2023-001</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span>Date & Time:</span>
+                            <span id="successDateTime">Loading...</span>
+                        </div>
+                        <div class="receipt-row">
+                            <span>Payment Method:</span>
+                            <span id="successMethod">Credit Card</span>
+                        </div>
+                    </div>
+                    
+                    <p class="receipt-note">A donation receipt has been sent to your email address. Please keep it for your records.</p>
+                </div>
+                
+                <div class="success-actions">
+                    <button class="btn-primary share-donation">
+                        <i class="fas fa-share-alt"></i> Share Your Support
+                    </button>
+                    <button class="btn-text close-modal">
+                        Continue to Website
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal" id="shareModal">
+        <div class="modal-content share-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Share Your Support</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>DEMO: Help spread the word by sharing that you've supported the Ubuntu Alliance Party.</p>
+                
+                <div class="share-options">
+                    <button class="share-option">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="share-option">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </button>
+                    <button class="share-option">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </button>
+                    <button class="share-option">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </button>
+                </div>
+                
+                <div class="share-text">
+                    <label>Custom Message</label>
+                    <textarea placeholder="I just supported the Ubuntu Alliance Party in building a better South Africa for all! Join me in supporting this movement for change...">I just supported the Ubuntu Alliance Party in building a better South Africa for all! Join me in supporting this movement for change.</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

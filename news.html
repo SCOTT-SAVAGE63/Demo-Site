@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | Ubuntu Alliance Party DEMO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://source.unsplash.com/64x64/?south-africa,flag">
+</head>
+<body>
+    <div class="page-transition"></div>
+    
+
+    
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="party-logo">
+                    <div class="logo-icon">UA</div>
+                    <div class="logo-text">
+                        <h1>Ubuntu Alliance Party</h1>
+                        <p>DEMO - Building Inclusive Prosperity</p>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="platform.html">Platform & Policies <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="platform.html#economic">Economic Justice</a>
+                            <a href="platform.html#land">Land & Housing</a>
+                            <a href="platform.html#education">Education Reform</a>
+                            <a href="platform.html#healthcare">Healthcare Access</a>
+                            <a href="platform.html#energy">Energy Security</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active"><a href="news.html">News & Updates</a></li>
+                    <li class="nav-item"><a href="events.html">Events</a></li>
+                    <li class="nav-item"><a href="get-involved.html">Get Involved</a></li>
+                    <li class="nav-item highlight"><a href="donate.html">Donate</a></li>
+                </ul>
+                
+                <div class="nav-search">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search news...">
+                        <button class="search-submit"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section news-hero">
+        <div class="hero-background" style="background-image: url('https://source.unsplash.com/1920x1080/?news,media,journalism')"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Latest News & Updates</h1>
+            <p class="hero-subtitle">DEMO: Stay informed about our activities, policy developments, and community engagements</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="news-container">
+            <div class="news-controls">
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="category-filter">Filter by Category:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="policy">Policy</option>
+                            <option value="campaign">Campaign</option>
+                            <option value="community">Community</option>
+                            <option value="events">Events</option>
+                            <option value="youth">Youth</option>
+                            <option value="announcements">Announcements</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="date-filter">Filter by Date:</label>
+                        <select id="date-filter" class="filter-select">
+                            <option value="all">All Dates</option>
+                            <option value="month">This Month</option>
+                            <option value="quarter">Last 3 Months</option>
+                            <option value="year">This Year</option>
+                        </select>
+                    </div>
+                    
+                    <button class="filter-reset">Reset Filters</button>
+                </div>
+                
+                <div class="view-controls">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i> Grid
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i> List
+                    </button>
+                    <button class="view-btn" data-view="compact">
+                        <i class="fas fa-bars"></i> Compact
+                    </button>
+                </div>
+            </div>
+            
+            <div class="news-grid" id="newsGrid">
+                <!-- Featured Article -->
+                <article class="news-card featured" data-category="policy" data-date="2023-03-20">
+                    <div class="featured-badge">Featured</div>
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/800x600/?parliament,south-africa,government')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 20, 2023</span>
+                            <span class="news-category">Policy Announcement</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h2 class="news-title">Comprehensive Energy Policy Released</h2>
+                        <p class="news-excerpt">DEMO: The Ubuntu Alliance Party today released its detailed Energy Security Plan, outlining a 5-year roadmap to end load shedding and transition to 60% renewable energy by 2035. The plan includes R150 billion in infrastructure investment.</p>
+                        <div class="news-tags">
+                            <span class="tag">Energy</span>
+                            <span class="tag">Policy</span>
+                            <span class="tag">Infrastructure</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="#" class="news-link">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-stats">
+                                <span><i class="far fa-eye"></i> 2,845</span>
+                                <span><i class="far fa-comment"></i> 42</span>
+                                <span><i class="fas fa-share"></i> 128</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Regular Articles -->
+                <article class="news-card" data-category="campaign" data-date="2023-03-18">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?campaign,rally,south-africa')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 18, 2023</span>
+                            <span class="news-category">Campaign</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <h3 class="news-title">Western Cape Campaign Launch Draws Thousands</h3>
+                        <p class="news-excerpt">DEMO: Our Western Cape campaign officially launched in Cape Town with over 5,000 supporters attending the opening rally at the Grand Parade.</p>
+                        <div class="news-tags">
+                            <span class="tag">Campaign</span>
+                            <span class="tag">Western Cape</span>
+                            <span class="tag">Rally</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-category="community" data-date="2023-03-15">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?community,garden,africa')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 15, 2023</span>
+                            <span class="news-category">Community</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="news-title">Urban Farming Initiative Expands to 50 Communities</h3>
+                        <p class="news-excerpt">DEMO: Our community gardens program has expanded to 50 townships across South Africa, creating sustainable food sources and 500+ local jobs.</p>
+                        <div class="news-tags">
+                            <span class="tag">Community</span>
+                            <span class="tag">Agriculture</span>
+                            <span class="tag">Employment</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-category="youth" data-date="2023-03-12">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?youth,technology,africa')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 12, 2023</span>
+                            <span class="news-category">Youth</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <h3 class="news-title">Digital Skills Program Reaches 10,000 Youth</h3>
+                        <p class="news-excerpt">DEMO: Our youth digital literacy program has trained 10,000 young South Africans in coding, digital marketing, and tech entrepreneurship.</p>
+                        <div class="news-tags">
+                            <span class="tag">Youth</span>
+                            <span class="tag">Technology</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-category="policy" data-date="2023-03-10">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?healthcare,clinic,africa')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 10, 2023</span>
+                            <span class="news-category">Policy</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="news-title">Healthcare Policy Framework Released</h3>
+                        <p class="news-excerpt">DEMO: Detailed proposal for National Health Service implementation, focusing on rural healthcare access and mental health integration.</p>
+                        <div class="news-tags">
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Policy</span>
+                            <span class="tag">Rural</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-category="events" data-date="2023-03-08">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?women,empowerment,africa')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 8, 2023</span>
+                            <span class="news-category">Events</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 2 min read</span>
+                        </div>
+                        <h3 class="news-title">Women's Day Economic Empowerment Summit</h3>
+                        <p class="news-excerpt">DEMO: Hosted successful Women's Day summit with 500+ attendees discussing economic inclusion and entrepreneurship opportunities.</p>
+                        <div class="news-tags">
+                            <span class="tag">Events</span>
+                            <span class="tag">Women</span>
+                            <span class="tag">Empowerment</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-category="community" data-date="2023-03-05">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?flood,relief,help')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 5, 2023</span>
+                            <span class="news-category">Community</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3 class="news-title">Flood Relief Efforts in KwaZulu-Natal</h3>
+                        <p class="news-excerpt">DEMO: Deployed emergency response teams and provided R2 million in aid to communities affected by recent flooding in KZN.</p>
+                        <div class="news-tags">
+                            <span class="tag">Community</span>
+                            <span class="tag">Relief</span>
+                            <span class="tag">KZN</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="news-card" data-category="announcements" data-date="2023-03-01">
+                    <div class="news-image" style="background-image: url('https://source.unsplash.com/600x400/?leadership,team,africa')"></div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">March 1, 2023</span>
+                            <span class="news-category">Announcements</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 2 min read</span>
+                        </div>
+                        <h3 class="news-title">New Provincial Leadership Appointments</h3>
+                        <p class="news-excerpt">DEMO: Announced new provincial coordinators for Gauteng, Western Cape, and KwaZulu-Natal to strengthen regional organization.</p>
+                        <div class="news-tags">
+                            <span class="tag">Announcements</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Organization</span>
+                        </div>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="news-pagination">
+                <button class="pagination-btn prev" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-number">8</button>
+                </div>
+                <button class="pagination-btn next">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="news-sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Popular This Week</h3>
+                    <div class="popular-articles">
+                        <a href="#" class="popular-article">
+                            <div class="popular-rank">1</div>
+                            <div class="popular-content">
+                                <h4>Energy Policy Details Released</h4>
+                                <div class="popular-meta">
+                                    <span>Policy</span>
+                                    <span>2,845 views</span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="popular-article">
+                            <div class="popular-rank">2</div>
+                            <div class="popular-content">
+                                <h4>Western Cape Campaign Launch</h4>
+                                <div class="popular-meta">
+                                    <span>Campaign</span>
+                                    <span>1,892 views</span>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="popular-article">
+                            <div class="popular-rank">3</div>
+                            <div class="popular-content">
+                                <h4>Urban Farming Success Stories</h4>
+                                <div class="popular-meta">
+                                    <span>Community</span>
+                                    <span>1,567 views</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">News Categories</h3>
+                    <div class="category-list">
+                        <a href="#" class="category-item">
+                            <span class="category-name">Policy Updates</span>
+                            <span class="category-count">12</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <span class="category-name">Campaign News</span>
+                            <span class="category-count">8</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <span class="category-name">Community Projects</span>
+                            <span class="category-count">15</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <span class="category-name">Youth Programs</span>
+                            <span class="category-count">6</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <span class="category-name">Events</span>
+                            <span class="category-count">10</span>
+                        </a>
+                        <a href="#" class="category-item">
+                            <span class="category-name">Announcements</span>
+                            <span class="category-count">5</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget newsletter-widget">
+                    <h3 class="widget-title">Get News Updates</h3>
+                    <p>DEMO: Subscribe to receive our latest news and updates directly to your inbox.</p>
+                    <form class="newsletter-form sidebar-newsletter">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="privacy-note">
+                        <small>We respect your privacy. Unsubscribe at any time.</small>
+                    </div>
+                </div>
+                
+                <div class="sidebar-widget archive-widget">
+                    <h3 class="widget-title">News Archive</h3>
+                    <select class="archive-select">
+                        <option>Select Month</option>
+                        <option>March 2023</option>
+                        <option>February 2023</option>
+                        <option>January 2023</option>
+                        <option>December 2022</option>
+                        <option>November 2022</option>
+                    </select>
+                    <button class="btn-secondary archive-btn">Browse Archive</button>
+                </div>
+            </div>
+        </div>
+        
+        <section class="section video-updates">
+            <div class="section-header">
+                <h2 class="section-title">Video Updates</h2>
+                <p class="section-subtitle">DEMO: Watch our latest video content</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail" style="background-image: url('https://source.unsplash.com/400x225/?speech,leader,africa')">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                        <div class="video-duration">8:42</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Policy Address: Economic Justice Plan</h3>
+                        <div class="video-meta">
+                            <span><i class="far fa-calendar"></i> March 18, 2023</span>
+                            <span><i class="far fa-eye"></i> 12.4K views</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail" style="background-image: url('https://source.unsplash.com/400x225/?townhall,meeting,community')">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                        <div class="video-duration">15:23</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Johannesburg Town Hall Meeting</h3>
+                        <div class="video-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2023</span>
+                            <span><i class="far fa-eye"></i> 8.7K views</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail" style="background-image: url('https://source.unsplash.com/400x225/?youth,technology,training')">
+                        <div class="play-button"><i class="fas fa-play"></i></div>
+                        <div class="video-duration">6:18</div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Digital Skills Program Highlights</h3>
+                        <div class="video-meta">
+                            <span><i class="far fa-calendar"></i> March 12, 2023</span>
+                            <span><i class="far fa-eye"></i> 15.2K views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section press-section">
+            <div class="section-header">
+                <h2 class="section-title">Press Releases</h2>
+                <p class="section-subtitle">DEMO: Official statements and announcements</p>
+            </div>
+            
+            <div class="press-releases">
+                <div class="press-release">
+                    <div class="press-date">March 22, 2023</div>
+                    <h3 class="press-title">Statement on National Budget 2023</h3>
+                    <p class="press-excerpt">DEMO: Ubuntu Alliance Party response to the 2023 National Budget, calling for greater investment in education and healthcare.</p>
+                    <a href="#" class="press-link">Read Full Statement →</a>
+                </div>
+                
+                <div class="press-release">
+                    <div class="press-date">March 19, 2023</div>
+                    <h3 class="press-title">Response to Energy Crisis Measures</h3>
+                    <p class="press-excerpt">DEMO: Party leadership comments on government's latest energy crisis interventions and outlines alternative solutions.</p>
+                    <a href="#" class="press-link">Read Full Statement →</a>
+                </div>
+                
+                <div class="press-release">
+                    <div class="press-date">March 14, 2023</div>
+                    <h3 class="press-title">Condemnation of Gender-Based Violence</h3>
+                    <p class="press-excerpt">DEMO: Strong condemnation of recent gender-based violence incidents and call for urgent national action plan.</p>
+                    <a href="#" class="press-link">Read Full Statement →</a>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="btn-secondary">View All Press Releases</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">UA</div>
+                        <div class="logo-text">
+                            <h3>Ubuntu Alliance Party</h3>
+                            <p>DEMO - Building Inclusive Prosperity</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">DEMO: This is a demonstration website showcasing a South African political party concept focused on unity, justice, and prosperity for all citizens.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="platform.html">Platform</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-contact">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> DEMO: 123 Unity Street, Pretoria, 0002</li>
+                        <li><i class="fas fa-phone"></i> DEMO: (012) 345-6789</li>
+                        <li><i class="fas fa-envelope"></i> demo@ubuntualliance.org.za</li>
+                    </ul>
+                    
+                    <div class="newsletter">
+                        <h5 class="newsletter-title">Stay Informed</h5>
+                        <p class="newsletter-text">DEMO: Subscribe for updates on this demonstration project.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-legal">
+                    <h4 class="footer-title">Legal & Demo Info</h4>
+                    <ul class="legal-links">
+                        <li><a href="#">Demo Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                    
+                    <div class="footer-disclaimer">
+                        <p><strong>DEMONSTRATION WEBSITE:</strong> This is a portfolio project for demonstration purposes only. Not affiliated with any real political entity. All data is fictional.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 Ubuntu Alliance Party DEMO. All rights reserved. This is a demonstration website.</p>
+                <div class="footer-badges">
+                    <span class="badge">Portfolio Project</span>
+                    <span class="badge">Demonstration Only</span>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <div class="modal" id="videoModal">
+        <div class="modal-content video-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Video Player</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>DEMO: Video player would appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
